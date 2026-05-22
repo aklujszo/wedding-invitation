@@ -106,12 +106,12 @@
             let obrotBoczny = event.gamma; 
 
             // Ograniczenie maksymalnego wychylenia, by obraz nie uciekł za daleko
-            if (obrotBoczny > 45) obrotBoczny = 45;
-            if (obrotBoczny < -45) obrotBoczny = -45;
+            if (obrotBoczny > 60) obrotBoczny = 60;
+            if (obrotBoczny < -60) obrotBoczny = -60;
 
             // Przeliczenie kąta na przesunięcie procentowe w osi X
             // Mnożnik 33 określa czułość ruchu kamery
-            let przesuniecieX = (obrotBoczny / 45) * 33; 
+            let przesuniecieX = (obrotBoczny / 60) * 48; 
 
             // Zastosowanie transformacji CSS3 dla maksymalnej płynności (wykorzystanie GPU)
             panorama.style.transform = `translateX(${przesuniecieX}%)`;
