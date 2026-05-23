@@ -64,8 +64,8 @@
 <body>
 
     <div id="ekran-startowy">
-        <h2>Zaproszenie dla Świadków</h2>
-        <button id="przycisk-start">Otwórz</button>
+        <h2>Zaproszenie / Invitation</h2>
+        <button id="przycisk-start">Otwórz / Open</button>
     </div>
 
     <div id="kontener-panoramy"></div>
@@ -102,7 +102,7 @@
             let obrotBoczny = event.gamma; // Wychylenie na boki od -90 do 90
 
             // Maksymalny komfortowy kąt obrotu dłoni (np. 30 stopni w lewo lub w prawo)
-            const komfortowyKat = 30; 
+            const komfortowyKat = 50; 
             
             if (obrotBoczny > komfortowyKat) obrotBoczny = komfortowyKat;
             if (obrotBoczny < -komfortowyKat) obrotBoczny = -komfortowyKat;
